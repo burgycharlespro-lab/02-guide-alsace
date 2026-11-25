@@ -1,0 +1,16 @@
+[project]
+name = "guide-alsace"
+version = "0.1.0"
+description = "Guide de l'Alsace — un RAG qui se mesure"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.12"
+# Les dépendances s'ajoutent au fil du cours avec : uv add nom-du-paquet
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest", "ruff"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
